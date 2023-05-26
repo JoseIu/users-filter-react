@@ -1,0 +1,34 @@
+.input {
+	width: 100%;
+	height: 2.5em;
+	padding: 0.5em 1em;
+	padding-left: 2.5em;
+
+	border-radius: var(--radius-sm);
+	border: none;
+	box-shadow: var(--shadow-sm);
+	outline: none;
+}
+.input:focus {
+	box-shadow: var(--shadow-md);
+}
+.input::placeholder {
+	color: var(--color-lightgray);
+}
+.searhContainer {
+	width: 50%;
+	position: relative;
+	/* background-color: brown; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.icon {
+	top: 0.75em;
+	left: 1em;
+	position: absolute;
+	width: 1em;
+	height: 1em;
+	color: var(--color-lightgray);
+	pointer-events: none;
+}

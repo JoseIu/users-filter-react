@@ -1,0 +1,26 @@
+.label {
+	position: relative;
+	height: 2em;
+	width: 2em;
+	/* background-color: blueviolet; */
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: var(--radius-sm);
+	box-shadow: var(--shadow-sm);
+	cursor: pointer;
+}
+.input {
+	background-color: brown;
+	position: absolute;
+	opacity: 0;
+}
+.check {
+	user-select: none;
+	width: 1.5em;
+	height: 1.5em;
+}
+.input:not(:checked) + .check {
+	display: none;
+}
